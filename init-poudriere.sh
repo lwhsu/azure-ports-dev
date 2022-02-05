@@ -18,7 +18,7 @@ fi
 
 umount ${RDISK_MPOINT}
 
-pkg install -y poudriere
+pkg install -y poudriere-devel
 
 zpool create tank ${RDISK}
 zfs create tank/ports
