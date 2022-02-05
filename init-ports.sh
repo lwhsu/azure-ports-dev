@@ -19,3 +19,6 @@ sudo pkg install -y \
 
 sudo mkdir -p /usr/ports
 sudo mount_nullfs ${PORTS} /usr/ports
+
+echo "DEVELOPER=yes" | sudo tee -a /etc/make.conf
+echo "DEV_WARNING_WAIT=1" | sudo tee -a /etc/make.conf
