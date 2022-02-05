@@ -16,3 +16,6 @@ sudo pkg install -y \
 	portfmt \
 	portlint \
 	py38-python-bugzilla
+
+sudo mkdir -p /usr/ports
+sudo mount_nullfs ${PORTS} /usr/ports
